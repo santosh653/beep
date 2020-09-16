@@ -9,7 +9,7 @@ arch:
   - amd64
   - arm64
   - ppc64le
-  # - ppc64le
+  - ppc64le
 
 script:
   - export BEEP_DEBUG_BUILD=yes
