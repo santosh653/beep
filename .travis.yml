@@ -6,8 +6,6 @@ compiler:
   - gcc
 
 arch:
-  - amd64
-  - arm64
   - ppc64le
   - ppc64le
 
@@ -26,9 +24,9 @@ script:
 
 matrix:
   include:
-    - os: linux
-      dist: bionic
+    #- os: linux
+     # dist: bionic
     - os: linux
       dist: xenial
-    - os: linux
-      dist: trusty
+    #- os: linux
+     # dist: trusty
