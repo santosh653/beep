@@ -8,7 +8,7 @@ compiler:
 arch:
   - amd64
   - arm64
-  # - ppc64le
+  
 
 script:
   - export BEEP_DEBUG_BUILD=yes
@@ -16,7 +16,6 @@ script:
   - env BEEP_LOG_LEVEL=999 ./beep || true
   - make -j 2 DESTDIR="$PWD/_i" install
   - ./beep --version > beep-usage.from--version
-  # - grep "$(date +%Y)" beep-usage.from--version
   - cat beep-usage.from--version
   - ./beep --help > beep-usage.from--help
   - diff -u beep-usage.txt beep-usage.from--help
