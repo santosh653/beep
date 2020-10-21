@@ -6,7 +6,7 @@ compiler:
   - gcc
 
 arch:
-  - ppc64le
+  - amd64
   - ppc64le
 
 script:
