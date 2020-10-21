@@ -5,11 +5,6 @@ compiler:
   - clang
   - gcc
 
-arch:
-  - amd64
-  - arm64
-  - ppc64le
-
 script:
   - export BEEP_DEBUG_BUILD=yes
   - make -j 2 DESTDIR="$PWD/_i"
